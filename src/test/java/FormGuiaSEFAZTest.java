@@ -1,50 +1,44 @@
 
-import java.io.File;
-
 import org.hamcrest.CoreMatchers;
-
 import org.junit.*;
-
-import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.support.ui.*;
-import org.openqa.selenium.Alert;
 
-import java.util.concurrent.TimeUnit;
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+
 /**
  * @see https://github.com/s2b-teste-2018-2/webdrivermanager-examples/blob/master/src/test/java/io/github/bonigarcia/wdm/test/ChromeTest.java
- * @author teste
+ * @author Jurley Colares Ribeiro
  *
  */
 public class FormGuiaSEFAZTest {
 
     private WebDriver driver;
-    //private FormGuiaSEFAZPage page;
+    WebDriverWait wait;
+    private FormGuiaSEFAZPage page;
 
     @BeforeClass
     public static void setupClass() {
         System.setProperty("webdriver.chrome.driver", "D:\\User\\Download\\Selenium\\chromedriver.exe");
     }
 
-
     @Before
     public void setupTest() {
         driver = new ChromeDriver();
-
+        //Create a wait. All test and page classes use this wait.
+        wait = new WebDriverWait(driver, 5);
         String initialPage = "https://bit.ly/2IogiOY";
         driver.get(initialPage);
-
-        //Create a wait. All test and page classes use this wait.
-        WebDriverWait wait = new WebDriverWait(driver, 10);
-        //driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
-        //Maximize Window
         driver.manage().window().maximize();
-        //page = PageFactory.initElements(driver, FormGuiaSEFAZPage.class);
-
+        page = PageFactory.initElements(driver, FormGuiaSEFAZPage.class);
     }
 
     @After
@@ -57,156 +51,83 @@ public class FormGuiaSEFAZTest {
     @Test
     public void afterFillOutFormThenChecksToSeeIfTheNameFieldContainsNumericValue() {
 
-        WebElement element = driver.findElement(By.xpath("//select[@name = 'CodDescTaxa']"));
+        page.selectOption();
+        page.selectButton();
+        page.dtPagamento();
+        page.cpf();
+        page.referencia();
+        page.vencimento();
+        page.nome();
+        page.selectButton2();
+        page.nomeContribuinte();
 
-        Select select = new Select(element);
-        select.selectByValue("2801EMISSÃO DA 2A CARTEIRA DE ARTESÃO");
-        WebElement button = driver.findElement(By.className("botaoMed")); //Botão avançar
-        button.click();
+        //---------- Test ---------
 
-        WebElement formDtPagamento = driver.findElement(By.name("DtLimite"));
-        formDtPagamento.sendKeys("10112018");
-        formDtPagamento.click();
-
-        WebElement formCpf = driver.findElement(By.name("Identificacao"));
-        formCpf.sendKeys("68772148209");
-        formCpf.click();
-
-        WebElement formReferencia = driver.findElement(By.name("Referencia"));
-        formReferencia.sendKeys("02");
-        formReferencia.click();
-
-        WebElement formVencimento = driver.findElement(By.name("Vencimento"));
-        formVencimento.sendKeys("11112018");
-        formVencimento.click();
-
-        WebElement formNome = driver.findElement(By.name("NomeContribuinte"));
-        formNome.sendKeys("0joao Ninguem");
-        formNome.click();
-
-        WebElement button2 = driver.findElement(By.className("botaoMed")); //Botão avançar
-        button2.click();
-
-        WebElement pdf = driver.findElement(By.xpath("//*[@id='painelConteudo']/table/tbody/tr[15]/td/table/tbody/tr/td[2]/a"));
-        WebElement nomeContribuinte = driver.findElement(By.xpath("//*[@id='painelConteudo']/table/tbody/tr[11]/td[2]"));
-
-        //wait(driver,10);
-        Assert.assertThat(nomeContribuinte.getText(), CoreMatchers.containsString("0"));
-        //Assert.assertTrue("Boleto gerado com sucesso",pdf.isEnabled());
-        //Assert.assertEquals("0joao Ninguem", nomeContribuinte.getText());
-        //WebElement pdf = driver.findElement(By.xpath("//*[@id='painelConteudo']/table/tbody/tr[15]/td/table/tbody/tr/td[2]/a"));
-        //pdf.click();
-        //element.sendKeys("wikipedia");
-        //element.submit();
-
-            /*
-            WebDriverWait wait = new WebDriverWait(driver, 10);
-            WebElement messageElement = wait.until(
-                    ExpectedConditions.presenceOfElementLocated(By.id("nqsbq"))
-            );
-
-            assertNotNull(messageElement);
-
-            WebDriverWait wait = new WebDriverWait(driver, 10);
-
-            driver.quit();
-            */
+        Assert.assertThat(page.nomeContribuinte.getText(), CoreMatchers.containsString("0"));
+//        Assert.assertThat(page.nomeContribuinte.getText(), CoreMatchers.containsString(page.));
+        Assert.assertEquals("0joao Ninguem", page.nomeContribuinte.getText());
     }
+
 
     @Test
     public void givenFormThenVerifiesIfItGeneratedPaymentSlip() throws InterruptedException {
 
-        WebElement element = driver.findElement(By.xpath("//select[@name = 'CodDescTaxa']"));
+        page.selectOption();
+        page.selectButton();
+        page.dtPagamento();
+        page.cpf();
+        page.referencia();
+        page.vencimento();
+        page.nome();
+        page.selectButton2();
+        page.nomeContribuinte();
 
-        Select select = new Select(element);
-        select.selectByValue("2801EMISSÃO DA 2A CARTEIRA DE ARTESÃO");
-        WebElement button = driver.findElement(By.className("botaoMed")); //Botão avançar
-        button.click();
+        //---------- Test ---------
+        Assert.assertTrue("Boleto gerado com sucesso",page.pdf.isEnabled());
+        page.downloadPdf();
 
-        WebElement formDtPagamento = driver.findElement(By.name("DtLimite"));
-        formDtPagamento.sendKeys("10112018");
-        formDtPagamento.click();
-
-        WebElement formCpf = driver.findElement(By.name("Identificacao"));
-        formCpf.sendKeys("68772148209");
-        formCpf.click();
-
-        WebElement formReferencia = driver.findElement(By.name("Referencia"));
-        formReferencia.sendKeys("02");
-        formReferencia.click();
-
-        WebElement formVencimento = driver.findElement(By.name("Vencimento"));
-        formVencimento.sendKeys("11112018");
-        formVencimento.click();
-
-        WebElement formNome = driver.findElement(By.name("NomeContribuinte"));
-        formNome.sendKeys("0joao Ninguem");
-        formNome.click();
-
-        WebElement button2 = driver.findElement(By.className("botaoMed")); //Botão avançar
-        button2.click();
-
-        WebElement pdf = driver.findElement(By.xpath("//*[@id='painelConteudo']/table/tbody/tr[15]/td/table/tbody/tr/td[2]/a"));
         Thread.sleep(8000);
-        Assert.assertTrue("Boleto gerado com sucesso",pdf.isEnabled());
-        pdf.click();
-
-        Thread.sleep(10000);
 
         //Verifica se download foi realizado.
-        File pdfFile = new File("C:\\Users\\jurle\\Downloads\\GA_SEFAZRS.pdf");
-        if (pdfFile.exists()) {
-            System.out.println("Arquivo existe!");
-        }else {
-            System.out.println("Arquivo Não existe!");
-            }
-
+        page.checkDonwload();
     }
 
     @Test
-    public void checkPopUp () throws InterruptedException {
+    public void checkIfPopUpAlertPresentAndTextContentInAlert () throws InterruptedException {
 
-        WebElement element = driver.findElement(By.xpath("//select[@name = 'CodDescTaxa']"));
+        page.selectOption();
+        page.selectButton();
+        page.generatoRandomDateWith2018();
+        page.cpf();
+        page.referencia();
+        page.vencimento();
+        page.nome();
+        page.selectButton2();
 
-        Select select = new Select(element);
-        select.selectByValue("2801EMISSÃO DA 2A CARTEIRA DE ARTESÃO");
-        WebElement button = driver.findElement(By.className("botaoMed")); //Botão avançar
-        button.click();
-
-        WebElement formDtPagamento = driver.findElement(By.name("DtLimite"));
-        formDtPagamento.sendKeys("10102018");
-        formDtPagamento.click();
-
-        WebElement formCpf = driver.findElement(By.name("Identificacao"));
-        formCpf.sendKeys("68772148209");
-        formCpf.click();
-
-        WebElement formReferencia = driver.findElement(By.name("Referencia"));
-        formReferencia.sendKeys("02");
-        formReferencia.click();
-
-        WebElement formVencimento = driver.findElement(By.name("Vencimento"));
-        formVencimento.sendKeys("11112018");
-        formVencimento.click();
-
-        WebElement formNome = driver.findElement(By.name("NomeContribuinte"));
-        formNome.sendKeys("0joao Ninguem");
-        formNome.click();
-
-        WebElement button2 = driver.findElement(By.className("botaoMed")); //Botão avançar
-        button2.click();
-
-/*
-        WebDriverWait wait = new WebDriverWait(driver, 5);
+        //---------- Test ---------
         wait.until(ExpectedConditions.alertIsPresent());
-*/
-        Thread.sleep(2000);
-        //Assert.assertTrue(wait.until(ExpectedConditions.alertIsPresent()));
-        //wait.until(ExpectedConditions.alertIsPresent());
-        // true, ExpectedConditions.alertIsPresent());
-        Assert.assertTrue(ExpectedConditions.alertIsPresent());
         //Assert.assertEquals(driver.switchTo().alert().getText(), "Data Progr p/ Pagamento Nao deve ser Menor que Data Atual");
+        Assert.assertEquals(driver.switchTo().alert().getText(), "Data inv�lida! (Informe:ddmmaaaa)");
 
-        Thread.sleep(10000);
+        Thread.sleep(5000);
+    }
+
+    @Test
+    public void givenFieldExpirationDateWithStringThenChecksIfPopupAlertAppears () throws IOException {
+
+        page.selectOption();
+        page.selectButton();
+        page.dtPagamento();
+        page.cpf();
+        page.referencia();
+        page.generatoAsciiRandomNameVencimento();
+        page.nome();
+        page.selectButton2();
+
+        //---------- Test ---------
+        wait.until(ExpectedConditions.alertIsPresent());
+        driver.getCurrentUrl();
+        File scrShot =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(scrShot, new File("C:\\Users\\jurle\\Downloads\\screenshot.png"));
     }
 }

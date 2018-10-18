@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75888517-461e-453f-9e28-c405c5d7dd87" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/FormGuiaSEFAZPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/FormGuiaSEFAZTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FormGuiaSEFAZTest.java" afterDir="false" />
     </list>
@@ -64,42 +66,46 @@
     <session id="359228074">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.48" value="1" />
+          <entry key="project.open.time.58" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="class" value="2" />
           <entry key="iml" value="1" />
-          <entry key="java" value="2" />
+          <entry key="java" value="3" />
           <entry key="txt" value="1" />
-          <entry key="xml" value="3" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CLASS" value="2" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="2" />
+          <entry key="JAVA" value="3" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="3" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="911" />
+          <entry key="java" value="3958" />
           <entry key="txt" value="2" />
-          <entry key="xml" value="6" />
+          <entry key="xml" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="911" />
+          <entry key="JAVA" value="3958" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="XML" value="6" />
+          <entry key="XML" value="19" />
         </counts>
       </usages-collector>
     </session>
@@ -109,13 +115,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/FormGuiaSEFAZTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1399">
-              <caret line="206" column="59" selection-start-line="206" selection-start-column="59" selection-end-line="206" selection-end-column="59" />
+            <state relative-caret-position="-2415">
+              <caret lean-forward="true" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#afterFillOutFormThenChecksToSeeIfTheNameFieldContainsNumericalue#0;class#FormGuiaSEFAZTest#0" />
-                <element signature="method#givenFormThenVerifiesIfItGeneratedPaymentSlip#0;class#FormGuiaSEFAZTest#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar!/org/openqa/selenium/WebDriver.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar!/org/openqa/selenium/support/ui/ExpectedConditions.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="503" column="43" selection-start-line="503" selection-start-column="43" selection-end-line="503" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -123,17 +145,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+            <state relative-caret-position="396">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Apagar.txt">
+        <entry file="file://$PROJECT_DIR$/src/test/java/FormGuiaSEFAZPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="65" column="79" selection-start-line="65" selection-start-column="79" selection-end-line="65" selection-end-column="79" />
+            <state relative-caret-position="-1381">
+              <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#selectOption#0;class#FormGuiaSEFAZPage#0" />
+                <element signature="method#dtPagamento#0;class#FormGuiaSEFAZPage#0" />
+                <element signature="method#cpf#0;class#FormGuiaSEFAZPage#0" />
+                <element signature="method#&lt;unnamed&gt;#0;class#FormGuiaSEFAZPage#0" />
+                <element signature="method#vencimento#0;class#FormGuiaSEFAZPage#0" />
+                <element signature="e#1983#1984#0" expanded="true" />
+                <element signature="e#2002#2003#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,6 +188,7 @@
         <option value="$PROJECT_DIR$/src/main/java/formGuiaSEFAZ.java" />
         <option value="$PROJECT_DIR$/Apagar.txt" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/FormGuiaSEFAZPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/FormGuiaSEFAZTest.java" />
       </list>
     </option>
@@ -179,6 +212,36 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="projeto01" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="projeto02" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="projeto01" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="projeto02" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="projeto01" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="projeto02" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="projeto01" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="projeto02" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -221,45 +284,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="projeto01" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="projeto02" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="projeto01" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="projeto02" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="projeto01" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="projeto02" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="projeto01" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="projeto02" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539740304826" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539844937485" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.41264367" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -273,18 +306,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FormGuiaSEFAZTest.checkPopUp">
+  <component name="RunManager" selected="JUnit.FormGuiaSEFAZTest.verificaNome">
     <configuration name="FormGuiaSEFAZTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="projeto02" />
-      <shortenClasspath name="CLASSPATH_FILE" />
-      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FormGuiaSEFAZTest" />
-      <option name="METHOD_NAME" value="" />
+      <option name="METHOD_NAME" value="checkPopUpError" />
       <option name="PARAMETERS" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FormGuiaSEFAZTest.VerificaPDF" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="projeto02" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FormGuiaSEFAZTest" />
+      <option name="METHOD_NAME" value="givenFormThenVerifiesIfItGeneratedPaymentSlip" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -299,38 +338,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FormGuiaSEFAZTest.givenFormThenVerifiesIfItGeneratedPaymentSlip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FormGuiaSEFAZTest.verificaNome" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="projeto02" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FormGuiaSEFAZTest" />
-      <option name="METHOD_NAME" value="givenFormThenVerifiesIfItGeneratedPaymentSlip" />
+      <option name="METHOD_NAME" value="afterFillOutFormThenChecksToSeeIfTheNameFieldContainsNumericValue" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FormGuiaSEFAZTest.givenGooglePageWhenSearchingForWikipediaThenAWikipediaSearchBoxAppears" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="projeto02" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FormGuiaSEFAZTest" />
-      <option name="METHOD_NAME" value="givenGooglePageWhenSearchingForWikipediaThenAWikipediaSearchBoxAppears" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.FormGuiaSEFAZTest" />
-      <item itemvalue="JUnit.FormGuiaSEFAZTest.givenGooglePageWhenSearchingForWikipediaThenAWikipediaSearchBoxAppears" />
-      <item itemvalue="JUnit.FormGuiaSEFAZTest.givenFormThenVerifiesIfItGeneratedPaymentSlip" />
+      <item itemvalue="JUnit.FormGuiaSEFAZTest.verificaNome" />
+      <item itemvalue="JUnit.FormGuiaSEFAZTest.VerificaPDF" />
       <item itemvalue="JUnit.FormGuiaSEFAZTest.checkPopUp" />
+      <item itemvalue="JUnit.FormGuiaSEFAZTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FormGuiaSEFAZTest.checkPopUp" />
-        <item itemvalue="JUnit.FormGuiaSEFAZTest.givenFormThenVerifiesIfItGeneratedPaymentSlip" />
+        <item itemvalue="JUnit.FormGuiaSEFAZTest.verificaNome" />
         <item itemvalue="JUnit.FormGuiaSEFAZTest" />
-        <item itemvalue="JUnit.FormGuiaSEFAZTest.givenGooglePageWhenSearchingForWikipediaThenAWikipediaSearchBoxAppears" />
+        <item itemvalue="JUnit.FormGuiaSEFAZTest.checkPopUp" />
+        <item itemvalue="JUnit.FormGuiaSEFAZTest.VerificaPDF" />
       </list>
     </recent_temporary>
   </component>
@@ -348,41 +383,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FormGuiaSEFAZTest_givenFormThenVerifiesIfItGeneratedPaymentSlip - 2018.10.16 at 21h 02m 52s.xml">
-      <configuration name="FormGuiaSEFAZTest.givenFormThenVerifiesIfItGeneratedPaymentSlip" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FormGuiaSEFAZTest_givenFormThenVerifiesIfItGeneratedPaymentSlip - 2018.10.16 at 21h 10m 07s.xml">
-      <configuration name="FormGuiaSEFAZTest.givenFormThenVerifiesIfItGeneratedPaymentSlip" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FormGuiaSEFAZTest_checkPopUp - 2018.10.16 at 21h 57m 21s.xml">
+    <history-entry file="FormGuiaSEFAZTest_checkPopUp - 2018.10.18 at 02h 27m 21s.xml">
       <configuration name="FormGuiaSEFAZTest.checkPopUp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FormGuiaSEFAZTest_checkPopUp - 2018.10.16 at 21h 59m 01s.xml">
+    <history-entry file="FormGuiaSEFAZTest_checkPopUp - 2018.10.18 at 02h 28m 17s.xml">
       <configuration name="FormGuiaSEFAZTest.checkPopUp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FormGuiaSEFAZTest_checkPopUp - 2018.10.16 at 22h 11m 50s.xml">
+    <history-entry file="FormGuiaSEFAZTest_checkPopUp - 2018.10.18 at 02h 29m 12s.xml">
       <configuration name="FormGuiaSEFAZTest.checkPopUp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FormGuiaSEFAZTest_checkPopUp - 2018.10.16 at 22h 14m 21s.xml">
+    <history-entry file="FormGuiaSEFAZTest_checkPopUp - 2018.10.18 at 02h 30m 46s.xml">
       <configuration name="FormGuiaSEFAZTest.checkPopUp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FormGuiaSEFAZTest_checkPopUp - 2018.10.16 at 22h 17m 11s.xml">
-      <configuration name="FormGuiaSEFAZTest.checkPopUp" configurationId="JUnit" />
+    <history-entry file="FormGuiaSEFAZTest_checkPopUpError - 2018.10.18 at 02h 56m 24s.xml">
+      <configuration name="FormGuiaSEFAZTest.checkPopUpError" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FormGuiaSEFAZTest_checkPopUp - 2018.10.16 at 22h 30m 53s.xml">
-      <configuration name="FormGuiaSEFAZTest.checkPopUp" configurationId="JUnit" />
+    <history-entry file="FormGuiaSEFAZTest_checkPopUpError - 2018.10.18 at 03h 02m 20s.xml">
+      <configuration name="FormGuiaSEFAZTest.checkPopUpError" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FormGuiaSEFAZTest_checkPopUp - 2018.10.16 at 22h 34m 57s.xml">
-      <configuration name="FormGuiaSEFAZTest.checkPopUp" configurationId="JUnit" />
+    <history-entry file="FormGuiaSEFAZTest_checkPopUpError - 2018.10.18 at 03h 14m 41s.xml">
+      <configuration name="FormGuiaSEFAZTest.checkPopUpError" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FormGuiaSEFAZTest_checkPopUp - 2018.10.16 at 22h 35m 39s.xml">
-      <configuration name="FormGuiaSEFAZTest.checkPopUp" configurationId="JUnit" />
+    <history-entry file="FormGuiaSEFAZTest - 2018.10.18 at 03h 31m 02s.xml">
+      <configuration name="FormGuiaSEFAZTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FormGuiaSEFAZTest_verificaNome - 2018.10.18 at 03h 32m 36s.xml">
+      <configuration name="FormGuiaSEFAZTest.verificaNome" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FormGuiaSEFAZTest_verificaNome - 2018.10.18 at 03h 34m 00s.xml">
+      <configuration name="FormGuiaSEFAZTest.verificaNome" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19509594" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.141258" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -391,7 +427,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23136818" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23136818" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -399,8 +435,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32925472" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32995737" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32925472" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -409,6 +444,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32995737" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -425,13 +461,6 @@
     <entry file="file://$PROJECT_DIR$/Testes-Guia-SEFAZ-FGTAS.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apagar.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="65" column="79" selection-start-line="65" selection-start-column="79" selection-end-line="65" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
@@ -439,21 +468,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Apagar.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1430">
+          <caret line="65" column="79" selection-start-line="65" selection-start-column="79" selection-end-line="65" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar!/org/openqa/selenium/support/ui/ExpectedConditions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="503" column="43" selection-start-line="503" selection-start-column="43" selection-end-line="503" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar!/org/openqa/selenium/WebDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+        <state relative-caret-position="396">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/FormGuiaSEFAZPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1381">
+          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#selectOption#0;class#FormGuiaSEFAZPage#0" />
+            <element signature="method#dtPagamento#0;class#FormGuiaSEFAZPage#0" />
+            <element signature="method#cpf#0;class#FormGuiaSEFAZPage#0" />
+            <element signature="method#&lt;unnamed&gt;#0;class#FormGuiaSEFAZPage#0" />
+            <element signature="method#vencimento#0;class#FormGuiaSEFAZPage#0" />
+            <element signature="e#1983#1984#0" expanded="true" />
+            <element signature="e#2002#2003#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/FormGuiaSEFAZTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1399">
-          <caret line="206" column="59" selection-start-line="206" selection-start-column="59" selection-end-line="206" selection-end-column="59" />
+        <state relative-caret-position="-2415">
+          <caret lean-forward="true" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#afterFillOutFormThenChecksToSeeIfTheNameFieldContainsNumericalue#0;class#FormGuiaSEFAZTest#0" />
-            <element signature="method#givenFormThenVerifiesIfItGeneratedPaymentSlip#0;class#FormGuiaSEFAZTest#0" />
           </folding>
         </state>
       </provider>
