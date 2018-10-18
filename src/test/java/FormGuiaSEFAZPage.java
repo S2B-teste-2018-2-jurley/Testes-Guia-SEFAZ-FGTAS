@@ -4,13 +4,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 public class FormGuiaSEFAZPage {
-
-    private List<String> arrayName;
 
     @FindBy(xpath = "//select[@name = 'CodDescTaxa']")
     @CacheLookup WebElement element;
@@ -93,13 +89,14 @@ public class FormGuiaSEFAZPage {
         System.out.println("Nome do Contribuinte: " + nomeContribuinte.getText());
     }
 
-    public void generatoAsciiRandomName() {
+    void generatoAsciiRandomName() {
     // Creates a 10 chars length of random ascii string.
         String randomAsciiName = org.apache.commons.lang3.RandomStringUtils.randomAscii(10);
-        System.out.println("Random Name = " + randomAsciiName);
+        formNome.sendKeys(randomAsciiName);
+        formNome.click();
     }
 
-    public void generatoAsciiRandomNameVencimento() {
+    void generatoAsciiRandomNameVencimento() {
         // Creates a 10 chars length of random ascii string.
         String randomAsciiName = org.apache.commons.lang3.RandomStringUtils.randomAscii(10);
         formVencimento.sendKeys(randomAsciiName);
@@ -107,9 +104,6 @@ public class FormGuiaSEFAZPage {
     }
 
     public void generatoAsciiRandomDate(){
-        // Creates a 10 chars length of random ascii string.
-        //String randomDate = org.apache.commons.lang3.RandomUtils.nextInt(9);
-        //System.out.println("Random Date = " + randomDate);
         Random rand = new Random();
         int num = rand.nextInt(9000) + 1000;
         System.out.println("Random Date = " + num);
@@ -122,22 +116,6 @@ public class FormGuiaSEFAZPage {
         String numAno = num + "2018";
         formDtPagamentoRandom.sendKeys(numAno);
         formDtPagamentoRandom.click();
-    }
-
-    public ArrayList[] arrayNumber(){
-        ArrayList[] listNumber = new ArrayList[9];
-        for ( int i = 0; i < listNumber.length; i++ ) {
-            listNumber[i] = new ArrayList<Integer>();
-        }
-        // exibe os valores da lista
-        for(int i = 0; i < listNumber.length; i++) {
-            System.out.println(i);
-            System.out.println(listNumber.length);
-            //System.exit(0);
-
-        }
-
-        return listNumber;
     }
 
     //verifies that the download is complete

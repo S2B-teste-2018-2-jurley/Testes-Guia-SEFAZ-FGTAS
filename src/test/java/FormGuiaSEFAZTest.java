@@ -64,10 +64,24 @@ public class FormGuiaSEFAZTest {
         //---------- Test ---------
 
         Assert.assertThat(page.nomeContribuinte.getText(), CoreMatchers.containsString("0"));
-//        Assert.assertThat(page.nomeContribuinte.getText(), CoreMatchers.containsString(page.));
         Assert.assertEquals("0joao Ninguem", page.nomeContribuinte.getText());
     }
 
+    @Test
+    public void givenARandomValueNameThenChecksIfPaymentSlipIsVisible() {
+
+        page.selectOption();
+        page.selectButton();
+        page.dtPagamento();
+        page.cpf();
+        page.referencia();
+        page.vencimento();
+        page.generatoAsciiRandomName();
+        page.selectButton2();
+
+        //---------- Test ---------
+        Assert.assertTrue(page.pdf.isEnabled());
+    }
 
     @Test
     public void givenFormThenVerifiesIfItGeneratedPaymentSlip() throws InterruptedException {
@@ -86,7 +100,7 @@ public class FormGuiaSEFAZTest {
         Assert.assertTrue("Boleto gerado com sucesso",page.pdf.isEnabled());
         page.downloadPdf();
 
-        Thread.sleep(8000);
+        Thread.sleep(5000);
 
         //Verifica se download foi realizado.
         page.checkDonwload();
@@ -106,10 +120,7 @@ public class FormGuiaSEFAZTest {
 
         //---------- Test ---------
         wait.until(ExpectedConditions.alertIsPresent());
-        //Assert.assertEquals(driver.switchTo().alert().getText(), "Data Progr p/ Pagamento Nao deve ser Menor que Data Atual");
-        Assert.assertEquals(driver.switchTo().alert().getText(), "Data inv�lida! (Informe:ddmmaaaa)");
-
-        Thread.sleep(5000);
+        Assert.assertEquals(driver.switchTo().alert().getText(), "Data Progr p/ Pagamento Nao deve ser Menor que Data Atual");
     }
 
     @Test
